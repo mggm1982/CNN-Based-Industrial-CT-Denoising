@@ -1,0 +1,27 @@
+# PHC351 - CNN-based denoising of industrial CT images (DnCNN) - Pushkar, 24324016
+# Python 3.10 or newer. Hardware: NVIDIA T4 GPU (Google Colab)
+# Install with:  pip install -r requirements.txt
+# Versions are minimums, not pins; Colab's preinstalled versions worked.
+
+# --- Core scientific stack ---
+numpy>=1.24          # arrays, random numbers, Poisson/Gaussian noise, .npz data files
+scipy>=1.10          # scipy.ndimage: Gaussian and median filters, shape drawing helpers
+scikit-image>=0.21   # non-local means denoising, PSNR and SSIM metrics
+pandas>=2.0          # metadata and results tables (CSV)
+Pillow>=10.0         # saving/loading PNG images
+
+# --- Deep learning ---
+torch>=2.1           # PyTorch: DnCNN model, training, mixed precision (AMP), CUDA
+
+# --- Plotting ---
+matplotlib>=3.7      # all figures
+
+# --- Notebook environment (not needed in Colab, it is preinstalled) ---
+# jupyter
+# notebook
+
+# --- Tools used, not installed with pip ---
+# Google Colab with NVIDIA T4 GPU - ran the dataset generation, training and evaluation
+# Google Drive                - shared folder for code, data, slides, video, article
+# PowerPoint (.pptx)          - presentation
+# Screen recorder             - video presentation
